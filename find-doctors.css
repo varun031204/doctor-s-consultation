@@ -398,12 +398,12 @@
     
     /* Specialties Adjustments */
     .specialty {
-      width: 200px;
-      height: 250px;
+      width: 250px;
+      height: 280px;
     }
     .specialty img {
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
     }
     .specialty p {
       font-size: 14px;
