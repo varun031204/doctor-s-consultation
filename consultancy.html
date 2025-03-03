@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consultancy</title>
+    <link rel="stylesheet" href="consultancy.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <a href="#" class="navbar-logo">X-Ray MK I</a>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="find-doctors.html" class="active">Find Doctors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        
+        
+    
+    </header>
+    
+    <section class="filters">
+        <h2>Filters</h2>
+        
+        <label>Online Consult</label>
+        
+        <h3>Speciality</h3>
+        <select id="specialitySelect">
+            <option value="">Select Speciality</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Orthopedic">Orthopedic</option>
+        </select>
+    </section>
+    
+    <section class="doctor-list" id="doctorList">
+        <div class="doctor-card" data-speciality="Dermatologist">
+            <img src="doctor1.jpg" alt="Doctor">
+            <h3>hh</h3>
+            <p>Dermatologist | 5 Years Experience</p>
+            <p>₹450</p>
+            <button>Digital Consult</button>
+        </div>
+        
+        <div class="doctor-card" data-speciality="Cardiologist">
+            <img src="doctor2.jpg" alt="Doctor">
+            <h3>Dr. Ritika Shanmugam</h3>
+            <p>Dermatologist | 6 Years Experience</p>
+            <p>₹399</p>
+            <button>Digital Consult</button>
+        </div>
+        
+        <div class="doctor-card" data-speciality="Dermatologist">
+            <img src="doctor3.jpg" alt="Doctor">
+            <h3>Dr. Chetana Kayathi</h3>
+            <p>Dermatologist | 13 Years Experience</p>
+            <p>₹550</p>
+            <button>Digital Consult</button>
+        </div>
+        
+        <div class="doctor-card" data-speciality="Dermatologist">
+            <img src="doctor4.jpg" alt="Doctor">
+            <h3>Dr. Priyankar Misra</h3>
+            <p>Dermatologist | 10 Years Experience</p>
+            <p>₹800</p>
+            <button>Digital Consult</button>
+        </div>
+        <div class="doctor-card" data-speciality="Cardiologist">
+            <img src="doctor2.jpg" alt="Doctor">
+            <h3>Dr. Ritika Shanmugam</h3>
+            <p>Dermatologist | 6 Years Experience</p>
+            <p>₹399</p>
+            <button>Digital Consult</button>
+        </div>
+        <div class="doctor-card" data-speciality="Neurologist">
+            <img src="doctor2.jpg" alt="Doctor">
+            <h3>Dr. Ritika Shanmugam</h3>
+            <p>Dermatologist | 6 Years Experience</p>
+            <p>₹399</p>
+            <button>Digital Consult</button>
+        </div>
+        <div class="doctor-card" data-speciality="Orthopedic">
+            <img src="doctor2.jpg" alt="Doctor">
+            <h3>Dr. Ritika Shanmugam</h3>
+            <p>Dermatologist | 6 Years Experience</p>
+            <p>₹399</p>
+            <button>Digital Consult</button>
+        </div>
+        <div class="doctor-card" data-speciality="Orthopedic">
+            <img src="doctor2.jpg" alt="Doctor">
+            <h3>Dr. Ritika Shanmugam</h3>
+            <p>Dermatologist | 6 Years Experience</p>
+            <p>₹399</p>
+            <button>Digital Consult</button>
+        </div>
+    </section>
+    
+    <script>
+        // Function to get URL parameter
+        function getQueryParam(name) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            let selectedSpeciality = getQueryParam("speciality");
+    
+            if (selectedSpeciality) {
+                let specialityDropdown = document.getElementById("specialitySelect");
+                specialityDropdown.value = selectedSpeciality; // Preselect the dropdown
+    
+                // Trigger filtering
+                filterDoctors(selectedSpeciality);
+            }
+    
+            // Listen for dropdown changes
+            document.getElementById("specialitySelect").addEventListener("change", function () {
+                filterDoctors(this.value);
+            });
+        });
+    
+        function filterDoctors(speciality) {
+            let doctors = document.querySelectorAll('.doctor-card');
+    
+            doctors.forEach(doctor => {
+                if (speciality === "" || doctor.getAttribute('data-speciality') === speciality) {
+                    doctor.style.display = 'block';
+                } else {
+                    doctor.style.display = 'none';
+                }
+            });
+        }
+    </script>
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Logo">
+                    <p>We use AI to detect diseases in X-ray images with high accuracy, helping doctors make informed decisions.</p>
+                    <div class="app-links">
+                        <a href="#"><img src="https://getsby.com/wp-content/uploads/2023/06/google-play-badge.png" alt="Google Play"></a>
+                        
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">X-Ray Guide</a></li>
+                            <li><a href="#">AI Research</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2024 AI X-Ray Diagnosis. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

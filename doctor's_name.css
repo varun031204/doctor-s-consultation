@@ -1,0 +1,568 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    text-decoration: none;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-logo {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-nav li {
+    margin-left: 20px;
+  }
+  
+  .navbar-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-nav a:hover {
+    background-color: #b4b4b4;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+
+
+  /* =========================
+   Doctor Profile Section
+   ========================= */
+.doctor-profile {
+
+    margin-top: 70px;
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .doctor-profile .profile-container {
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .doctor-profile .profile-image {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .doctor-profile .profile-image img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-profile .profile-details {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+  }
+  
+  .doctor-profile .profile-details h1 {
+    font-size: 32px;
+    color: #004080;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-profile .profile-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* =========================
+     About the Doctor Section
+     ========================= */
+  .about-doctor {
+   
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .about-doctor .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-doctor .about-container h2 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .about-doctor .about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Responsive Adjustment for Doctor Profile */
+  @media (max-width: 768px) {
+    .doctor-profile .profile-details {
+      text-align: center;
+    }
+  }
+  /* Animations */
+  .animate-slide-up {
+    animation: slideUp 1s forwards;
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }  
+  /* Footer Styles */
+  .footer {
+    background-color: #f8f9fa;
+    padding: 40px 10%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    max-width: 300px;
+  }
+  
+  .footer-brand img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .app-links img {
+    width: 120px;
+    margin-right: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  
+  .footer-links div {
+    margin-right: 20px;
+  }
+  
+  .footer-links h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons h3 {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    color: #555;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .footer-info {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  hr {
+    margin-top: 20px;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+
+    
+    .navbar-nav li {
+      margin-left: 10px;
+    }
+    
+    .navbar a {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    
+    .navbar-nav {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+      display: none;
+    }
+    
+    .navbar-nav.active {
+      transform: translateY(0);
+      opacity: 1;
+      display: flex;
+    }
+    
+    .navbar-nav li {
+      margin: 0;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .menu-toggle {
+      display: flex;
+    }
+    
+    .menu-toggle div {
+      width: 30px;
+      height: 3px;
+      background: black;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active div:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-links {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .footer-links div {
+      margin: 10px 0;
+    }
+    
+    .social-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .footer-info {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
+  /* =========================
+     Booking Section
+     ========================= */
+  .booking-section {
+    padding: 80px 20px;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .booking-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  
+  /* Left: Booking Cards */
+  #card-heading{
+      font-size: 25px;
+      color: #004080;
+     
+  }
+  .booking-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .booking-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .booking-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .booking-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .booking-card .card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .booking-card .try-btn {
+    background: #b93e10;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .booking-card .try-btn:hover {
+    background: #a6360d;
+  }
+  
+  /* Right: Booking Slot Box */
+  .booking-slot {
+    flex: 1;
+    background: #e8f4fd;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: slideInRight 1s forwards;
+    opacity: 0;
+  }
+  
+  .booking-slot h2 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .slot-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .slot-btn {
+    background: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .slot-btn:hover {
+    background: #003066;
+  }
+  .booking-form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .booking-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .confirm-booking {
+    background: #b93e10;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background 0.3s;
+  }
+  
+  .confirm-booking:hover {
+    background: #a6360d;
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Adjustments for Booking Section */
+  @media (max-width: 768px) {
+    .booking-container {
+      flex-direction: column;
+    }
+    
+    .booking-slot {
+      margin-top: 40px;
+    }
+    
+    .booking-card .card-content {
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Profile & Booking - X-Ray MK I</title>
+  <link rel="stylesheet" href="doctor's_name.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">X-Ray MK I</a>
+      <div class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Doctor Profile Section -->
+  <section class="doctor-profile">
+    <div class="profile-container">
+      <div class="profile-image">
+        <img src="chest-xray.jpg" alt="Doctor Image" />
+      </div>
+      <div class="profile-details">
+        <h1>Dr. Jane Doe</h1>
+        <p><strong>Speciality:</strong> Radiology & Diagnostic Imaging</p>
+        <p><strong>Experience:</strong> 15 Years</p>
+        <p><strong>Degree:</strong> MD, Radiology</p>
+        <p><strong>Languages Spoken:</strong> English, Spanish, French</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Doctor Section -->
+  <section class="about-doctor">
+    <div class="about-container">
+      <h2>About Dr. Jane Doe</h2>
+      <p>
+        Dr. Jane Doe is a highly experienced radiologist specializing in diagnostic imaging.
+        With over 15 years in the field, she has a proven track record of identifying complex medical
+        conditions early, ensuring prompt and effective treatment. Her passion for patient care and
+        continuous learning has made her a trusted figure in the medical community.
+      </p>
+      <p>
+        Her expertise in advanced imaging techniques and AI-powered diagnostic tools has further
+        improved the accuracy of disease detection, offering patients the best possible outcomes.
+        Dr. Doe is committed to staying at the forefront of medical technology and continuously
+        upgrades her skills to serve her patients better.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking-section">
+    <div class="booking-container">
+      
+      <div class="booking-cards">
+        <b><p id="card-heading">Try Our New AI-Powered Diagnosis</p></b>
+        <div class="booking-card">
+          <img src="chest-xray.jpg" alt="Card 1" />
+          <div class="card-content">
+            <p>Pneumonia Detector MK I.</p>
+            <p>Detect pneumonia in chest X-rays within seconds using our advanced AI-powered model. Simply upload an X-ray image, and our system will analyze it with high accuracy, providing a clear diagnosis and confidence score. Designed to assist medical professionals and individuals in early detection, ensuring faster and more informed decisions.</p>
+            <button class="try-btn">Try It Out</button>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Booking Slot Box -->
+      <div class="booking-slot">
+        <h2>Select a Slot &amp; Book Now</h2>
+        <div class="slot-options">
+          <button class="slot-btn">9:00 AM</button>
+          <button class="slot-btn">10:00 AM</button>
+          <button class="slot-btn">11:00 AM</button>
+          <button class="slot-btn">12:00 PM</button>
+        </div>
+        
+        <!-- Booking Form Fields -->
+        <div class="booking-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        
+        <button class="confirm-booking">Confirm Booking</button>
+      </div>
+  </section>
+
+
+
+  <!-- Footer-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Logo" />
+          <p>
+            We use AI to detect diseases in X-ray images with high accuracy, helping doctors make informed decisions.
+          </p>
+          <div class="app-links">
+            <a href="#"
+              ><img src="https://getsby.com/wp-content/uploads/2023/06/google-play-badge.png" alt="Google Play"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Updates</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">X-Ray Guide</a></li>
+              <li><a href="#">AI Research</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <p>&copy; 2024 AI X-Ray Diagnosis. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-shrink");
+      } else {
+        navbar.classList.remove("navbar-shrink");
+      }
+    });
+  </script>
+  <script src="script1.js"></script>
+</body>
+</html>
