@@ -7,25 +7,17 @@
     <link rel="stylesheet" href="consultancy.css">
 </head>
 <body>
- <header>
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">X-Ray MK I</a>
-
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
+    <header>
+        <nav class="navbar">
+        <a href="#" class="navbar-logo">X-Ray MK I</a>
         <ul class="navbar-nav">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="find-doctors.html" id="diff">Find Doctors</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="find-doctors.html" class="active">Find Doctors</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-</header>
+    </header>
     
     <section class="filters">
         <h2>Filters</h2>
@@ -35,88 +27,61 @@
         <h3>Speciality</h3>
         <select id="specialitySelect">
             <option value="">Select Speciality</option>
+            <option value="General Physician">General Physician</option>
             <option value="Dermatologist">Dermatologist</option>
             <option value="Cardiologist">Cardiologist</option>
             <option value="Neurologist">Neurologist</option>
             <option value="Orthopedic">Orthopedic</option>
+            <option value="Urologist">Urologist</option>
+            <option value="Pediatrician">Pediatrician</option>
+            <option value="ENT">ENT</option>
+            <option value="Gynaecologist">Gynaecologist</option>
         </select>
     </section>
     
     <section class="doctor-list" id="doctorList">
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Dermatologist">
+        <div class="doctor-card" data-speciality="General Physician">
             <img src="doctor1.jpg" alt="Doctor">
-            <h3>hh</h3>
-            <p>Dermatologist | 5 Years Experience</p>
-            <p>₹450</p>
+            <h3>Dr. John Doe</h3>
+            <p>General Physician | 7 Years Experience</p>
+            <p>₹500</p>
             <button>Digital Consult</button>
         </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Cardiologist">
+
+        <div class="doctor-card" data-speciality="Dermatologist">
             <img src="doctor2.jpg" alt="Doctor">
             <h3>Dr. Ritika Shanmugam</h3>
             <p>Dermatologist | 6 Years Experience</p>
             <p>₹399</p>
             <button>Digital Consult</button>
         </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Dermatologist">
+        
+        <div class="doctor-card" data-speciality="Cardiologist">
             <img src="doctor3.jpg" alt="Doctor">
-            <h3>Dr. Chetana Kayathi</h3>
-            <p>Dermatologist | 13 Years Experience</p>
-            <p>₹550</p>
+            <h3>Dr. Alex Mathew</h3>
+            <p>Cardiologist | 10 Years Experience</p>
+            <p>₹700</p>
             <button>Digital Consult</button>
         </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Dermatologist">
+
+        <div class="doctor-card" data-speciality="Neurologist">
             <img src="doctor4.jpg" alt="Doctor">
             <h3>Dr. Priyankar Misra</h3>
-            <p>Dermatologist | 10 Years Experience</p>
+            <p>Neurologist | 12 Years Experience</p>
             <p>₹800</p>
             <button>Digital Consult</button>
         </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Cardiologist">
-            <img src="doctor2.jpg" alt="Doctor">
-            <h3>Dr. Ritika Shanmugam</h3>
-            <p>Dermatologist | 6 Years Experience</p>
-            <p>₹399</p>
-            <button>Digital Consult</button>
-        </div>
-        <div class="doctor-card" data-speciality="Neurologist">
-            <img src="doctor2.jpg" alt="Doctor">
-            <h3>Dr. Ritika Shanmugam</h3>
-            <p>Dermatologist | 6 Years Experience</p>
-            <p>₹399</p>
-            <button>Digital Consult</button>
-        </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
+        
         <div class="doctor-card" data-speciality="Orthopedic">
-            <img src="doctor2.jpg" alt="Doctor">
-            <h3>Dr. Ritika Shanmugam</h3>
-            <p>Dermatologist | 6 Years Experience</p>
-            <p>₹399</p>
+            <img src="doctor5.jpg" alt="Doctor">
+            <h3>Dr. Sneha Kapoor</h3>
+            <p>Orthopedic | 8 Years Experience</p>
+            <p>₹650</p>
             <button>Digital Consult</button>
         </div>
-        </a>
-        <a href="doctor's_name.html" class="specialty-link">
-        <div class="doctor-card" data-speciality="Orthopedic">
-            <img src="doctor2.jpg" alt="Doctor">
-            <h3>Dr. Ritika Shanmugam</h3>
-            <p>Dermatologist | 6 Years Experience</p>
-            <p>₹399</p>
-            <button>Digital Consult</button>
-        </div>
-        </a>
     </section>
     
     <script>
-        // Function to get URL parameter
         function getQueryParam(name) {
             let urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
@@ -127,13 +92,10 @@
     
             if (selectedSpeciality) {
                 let specialityDropdown = document.getElementById("specialitySelect");
-                specialityDropdown.value = selectedSpeciality; // Preselect the dropdown
-    
-                // Trigger filtering
+                specialityDropdown.value = selectedSpeciality;
                 filterDoctors(selectedSpeciality);
             }
     
-            // Listen for dropdown changes
             document.getElementById("specialitySelect").addEventListener("change", function () {
                 filterDoctors(this.value);
             });
@@ -159,7 +121,6 @@
                     <p>We use AI to detect diseases in X-ray images with high accuracy, helping doctors make informed decisions.</p>
                     <div class="app-links">
                         <a href="#"><img src="https://getsby.com/wp-content/uploads/2023/06/google-play-badge.png" alt="Google Play"></a>
-                        
                     </div>
                 </div>
                 <div class="footer-links">
@@ -167,10 +128,10 @@
                         <h3>Company</h3>
                         <ul>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="contact (1).html">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Updates</a></li>
-                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="#">Blogs</a></li>
                         </ul>
                     </div>
                     <div>
