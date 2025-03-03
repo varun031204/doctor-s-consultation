@@ -57,6 +57,11 @@ body {
 .navbar-nav a:hover {
     background-color: #b4b4b4;
 }
+  #diff{
+    color: #ff6a00;
+    font-weight: bold;
+  }
+
 
 main {
     margin-top: 80px;
