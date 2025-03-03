@@ -396,9 +396,3 @@ hr {
   }
   
 
-.specialty-link {
-    text-decoration: none; /* Remove default link styles */
-    color: inherit; /* Keep the original text color */
-    display: inline-block;
-}
-
