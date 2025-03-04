@@ -351,6 +351,7 @@
   
   .footer-links {
       width: 100%;
+     margin-left: 50px;
       justify-content: center;
   }
    .app-links img {
