@@ -176,12 +176,12 @@
   background-color: #f8f9fa;
   padding: 40px 10%;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: auto;
+  margin-bottom: 0px;
 }
 
 .footer-top {
