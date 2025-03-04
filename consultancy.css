@@ -393,21 +393,21 @@ hr {
   }
 
    .app-links img {
-  width: 120px;
-  margin-left: 50px;
-}
-.footer-brand img {
-  width: 150px;
+     width: 120px;
      margin-left: 50px;
-  margin-bottom: 10px;
-}
-
-.footer-brand p {
-  font-size: 14px;
-  color: #555;
-     margin-left: 50px;
-  margin-bottom: 15px;
-}
+   }
+   .footer-brand img {
+     width: 150px;
+        margin-left: 50px;
+     margin-bottom: 10px;
+   }
+   
+   .footer-brand p {
+     font-size: 14px;
+     color: #555;
+        margin-left: 50px;
+     margin-bottom: 15px;
+   }
 
   .footer .footer-links div {
       margin: 15px 0;
