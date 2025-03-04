@@ -373,10 +373,28 @@ hr {
     text-align: center;
 }
 
-.footer-links {
+
+     .footer-links {
     width: 100%;
+   margin-left:25px
     justify-content: center;
 }
+   .app-links img {
+     width: 120px;
+     margin-left: 50px;
+   }
+   .footer-brand img {
+     width: 150px;
+        margin-left: 50px;
+     margin-bottom: 10px;
+   }
+   
+   .footer-brand p {
+     font-size: 14px;
+     color: #555;
+        margin-left: 50px;
+     margin-bottom: 15px;
+   }
 
 .footer-links div {
     margin: 10px 0;
