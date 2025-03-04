@@ -131,6 +131,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 220px;
+    height: 250px
     transition: transform 0.3s ease, box-shadow 0.3s ease;
    margin-bottom: 70px;
 }
