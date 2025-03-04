@@ -701,8 +701,9 @@ hr {
     justify-content: center;
     margin-top: 10px;
 }
-.app-links{
-   margin-left:25px
+.app-links img {
+  width: 120px;
+  margin-left: 25px;
 }
 
 .footer-info {
