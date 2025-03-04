@@ -701,6 +701,9 @@ hr {
     justify-content: center;
     margin-top: 10px;
 }
+.app-links{
+   margin-left:25px
+}
 
 .footer-info {
     text-align: center;
