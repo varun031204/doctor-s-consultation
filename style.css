@@ -689,6 +689,7 @@ hr {
 
 .footer-links {
     width: 100%;
+   margin-left:25px
     justify-content: center;
 }
 
