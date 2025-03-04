@@ -705,6 +705,18 @@ hr {
   width: 120px;
   margin-left: 45px;
 }
+.footer-brand img {
+  width: 150px;
+     margin-left: 45px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #555;
+     margin-left: 45px;
+  margin-bottom: 15px;
+}
 
 .footer-info {
     text-align: center;
