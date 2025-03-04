@@ -349,11 +349,12 @@
       text-align: center;
   }
   
-  .footer-links {
-      width: 100%;
-     margin-right: 25px;
-      justify-content: center;
-  }
+
+     .footer-links {
+    width: 100%;
+   margin-left:25px
+    justify-content: center;
+}
    .app-links img {
      width: 120px;
      margin-left: 50px;
