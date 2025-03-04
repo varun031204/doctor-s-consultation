@@ -137,9 +137,9 @@
 
 .doctor-card img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
+    width: 160px;
+    height: 160px;
+    object-fit: fill;
     margin-bottom: 10px;
 }
 
