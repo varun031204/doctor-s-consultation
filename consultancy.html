@@ -104,37 +104,42 @@
     </section>
     
     <script>
-        function getQueryParam(name) {
-            let urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
+    // Function to get URL parameter
+    function getQueryParam(name) {
+        let urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let selectedSpeciality = getQueryParam("speciality");
+
+        if (selectedSpeciality) {
+            let specialityDropdown = document.getElementById("specialitySelect");
+            specialityDropdown.value = selectedSpeciality; // Preselect the dropdown
+
+            // Trigger filtering
+            filterDoctors(selectedSpeciality);
         }
-    
-        document.addEventListener("DOMContentLoaded", function () {
-            let selectedSpeciality = getQueryParam("speciality");
-    
-            if (selectedSpeciality) {
-                let specialityDropdown = document.getElementById("specialitySelect");
-                specialityDropdown.value = selectedSpeciality;
-                filterDoctors(selectedSpeciality);
-            }
-    
-            document.getElementById("specialitySelect").addEventListener("change", function () {
-                filterDoctors(this.value);
-            });
+
+        // Listen for dropdown changes
+        document.getElementById("specialitySelect").addEventListener("change", function () {
+            filterDoctors(this.value);
         });
-    
-        function filterDoctors(speciality) {
-            let doctors = document.querySelectorAll('.doctor-card');
-    
-            doctors.forEach(doctor => {
-                if (speciality === "" || doctor.getAttribute('data-speciality') === speciality) {
-                    doctor.style.display = 'block';
-                } else {
-                    doctor.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    });
+
+    function filterDoctors(speciality) {
+        let doctors = document.querySelectorAll('.doctor-card');
+
+        doctors.forEach(doctor => {
+            if (speciality === "" || doctor.getAttribute('data-speciality') === speciality) {
+                doctor.style.display = 'block';
+            } else {
+                doctor.style.display = 'none';
+            }
+        });
+    }
+</script>
+
      <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
