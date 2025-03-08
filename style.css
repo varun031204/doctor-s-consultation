@@ -461,7 +461,7 @@
 .timeline-item.in-view:nth-child(even) {
   animation: slideInRight 1s forwards;
 }
-join-doctor {
+.join-doctor {
   text-align: center;
   padding: 60px 20px;
   background-color: #f8f9ff;
