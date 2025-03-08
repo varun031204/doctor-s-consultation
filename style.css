@@ -254,7 +254,96 @@
   color: #004080;
   margin-bottom: 10px;
 }
+.consultation-process {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9ff;
+}
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.process-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6a00;
+  background-color: #ebeaff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.process-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.process-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 22%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6a00;
+  background-color: #ebeaff;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .process-steps {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .step {
+      width: 90%;
+  }
+}
 /* Timeline Section */
 .timeline {
   width: 90%;
