@@ -345,6 +345,7 @@
   }
 }
 /* Section Styling */
+/* Section Styling */
 .ai-process {
   text-align: center;
   padding: 80px 20px;
@@ -364,7 +365,6 @@
 }
 
 /* Process Container */
-/* Process Container */
 .process-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -374,27 +374,40 @@
   margin: auto;
 }
 
-/* Special case for 4th card (centering it below) */
-.process-card:nth-child(4) {
-  grid-column: span 3;  /* Makes it occupy full width of three columns */
-  justify-self: center; /* Centers it */
-  width: 50%; /* Adjust width to look balanced */
-}
-
-
-/* Process Cards */
+/* Process Card Styling */
 .process-card {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .process-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Special case for 4th card (center it below the first 3) */
+@media (min-width: 768px) { /* For tablets and larger screens */
+  .process-card:nth-child(4) {
+      grid-column: span 3; /* Takes full width of 3 columns */
+      justify-self: center; /* Centers it */
+      width: 50%; /* Adjust width to look balanced */
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) { /* For mobile screens */
+  .process-container {
+      grid-template-columns: 1fr; /* Stack all cards in a single column */
+      gap: 20px;
+  }
+
+  .process-card:nth-child(4) {
+      grid-column: span 1; /* Takes full width */
+      width: 100%; /* Full width on mobile */
+  }
 }
 
 /* Number Box */
@@ -424,12 +437,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .process-container {
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: 1fr;
   }
 
   .process-card {
       width: 90%;
+      margin: auto;
   }
 }
 .join-doctor {
