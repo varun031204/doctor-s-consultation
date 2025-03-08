@@ -93,7 +93,7 @@
     font-weight: bold;
   }
 
-/* Hero Section */
+
   /* Hero Section */
   .hero-section {
     display: flex;
@@ -216,13 +216,14 @@
 
 /* Timeline Section */
 .timeline {
-    background-color: #f8f9ff;
-  width: 90%;
+  background-color: #f8f9ff;
+  width: 100%;
   margin: 120px auto;
   text-align: center;
 }
 
 .timeline-container {
+   
   position: relative;
   max-width: 1200px;
   margin: auto;
