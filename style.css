@@ -424,12 +424,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .process-container {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: center;
   }
 
   .process-card {
       width: 90%;
-      margin: auto;
   }
 }
 .join-doctor {
