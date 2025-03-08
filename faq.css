@@ -82,7 +82,7 @@ h1 {
 /* FAQ Item Styles */
 .faq-item {
     background-color: white;
-    max-width: 2000px;
+    max-width: 1800px;
     margin-bottom: 20px;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
