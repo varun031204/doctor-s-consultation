@@ -909,3 +909,32 @@ hr {
     margin-top: 10px;
 }
 }
+@media (max-width: 768px) {
+  .timeline {
+      width: 100%;
+  }
+
+  .timeline-item {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+      left: 0;
+      transform: translateX(0);
+  }
+
+  .timeline-content {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .timeline-content img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+  }
+}
