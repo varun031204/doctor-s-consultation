@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Hiring Application</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="doctor-career.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+  <!-- Top Banner -->
+
+
+  <!-- Employment Application Section -->
+  <section class="application-section">
+    <div class="form-container">
+      <h2 class="form-title">Employment Application</h2>
+      <p class="form-subtitle">
+        Fill the form below accurately, indicating your potential and suitability for the Doctor position.
+      </p>
+
+      <form class="application-form">
+        <!-- Name Fields -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name <span>*</span></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name <span>*</span></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+
+        <!-- Birth Date Fields -->
+        <div class="form-group">
+            <label for="birthDate">Birth Date <span>*</span></label>
+            <input
+              type="text"
+              id="birthDate"
+              name="birthDate"
+              placeholder="Select your birth date"
+              required
+            >
+          </div>
+
+        <!-- Phone & Email Fields -->
+        <div class="form-group phone-group">
+            <label for="phoneNumber">Phone Number <span>*</span></label>
+            <div class="phone-field">
+              <span class="country-code">+91</span>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="xxxxx-xxxxx"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="emailAddress">Email Address <span>*</span></label>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="example@domain.com" required>
+          </div>
+        </div>
+
+        <!-- License Number & Specialty -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="licenseNumber">Medical License Number <span>*</span></label>
+            <input type="text" id="licenseNumber" name="licenseNumber" placeholder="License Number" required>
+          </div>
+          <div class="form-group">
+            <label for="specialty">Specialty <span>*</span></label>
+            <input type="text" id="specialty" name="specialty" placeholder="e.g. Cardiology, Pediatrics" required>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="form-group">
+          <label for="experience">Years of Experience <span>*</span></label>
+          <input type="number" id="experience" name="experience" min="0" placeholder="e.g. 5" required>
+        </div>
+
+        <!-- Education & Training -->
+        <div class="form-group">
+          <label for="education">Education &amp; Training</label>
+          <textarea id="education" name="education" rows="4" placeholder="List medical school, residency, fellowship, etc."></textarea>
+        </div>
+
+        <!-- Certifications -->
+        <div class="form-group">
+          <label for="certifications">Certifications</label>
+          <textarea id="certifications" name="certifications" rows="3" placeholder="List relevant board certifications or additional qualifications"></textarea>
+        </div>
+
+        <!-- Professional Statement -->
+        <div class="form-group">
+          <label for="professionalStatement">Professional Statement</label>
+          <textarea id="professionalStatement" name="professionalStatement" rows="5" placeholder="Describe your approach to patient care, medical philosophy, and relevant experiences."></textarea>
+        </div>
+
+        <!-- References -->
+        <div class="form-group">
+          <label for="references">References</label>
+          <textarea id="references" name="references" rows="3" placeholder="Provide names, positions, and contact details of at least two references."></textarea>
+        </div>
+
+        <!-- Resume Upload -->
+        <div class="form-group">
+          <label for="resume">Upload Resume/CV</label>
+          <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+        </div>
+
+        <!-- Submit Button -->
+          <div class="form-group">
+        <button type="submit" class="submit-button">Submit Application</button>
+      </div>
+    </form>
+    <!-- Custom Modal -->
+<div class="custom-modal">
+    <div class="modal-content">
+        <p class="modal-message"></p>
+        <button class="close-modal">OK</button>
+    </div>
+</div>
+
+  </section>
+    <!-- jQuery & jQuery UI Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+          $("#birthDate").datepicker({
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "1900:2100"
+          });
+        });
+      </script>
+      <script src="hiring.js"></script>
+</body>
+</html>
