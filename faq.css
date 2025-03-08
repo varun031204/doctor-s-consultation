@@ -6,14 +6,34 @@
 }
 
 /* Body Styles */
-body {
+  body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: white;
+    color: black;
     line-height: 1.6;
     scroll-behavior: smooth;
-}
-.navbar-logo {
+    text-decoration: none;
+  }
+  
+  /* ========================
+     Navbar Styles
+     ======================== */
+  .navbar {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+ 
+  .navbar-logo {
     color: black;
     font-size: 28px;
     font-weight: bold;
