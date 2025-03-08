@@ -125,8 +125,8 @@
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 180px; /* Increased card size */
-    height: 180px; /* Maintain square shape */
+    width: 220px; /* Increased card size */
+    height: 220px; /* Maintain square shape */
     display: flex;
     flex-direction: column;
     align-items: center;
