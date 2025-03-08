@@ -385,6 +385,7 @@
 .timeline-icon {
   width: 120px;  /* Larger icon size */
   height: 120px;
+  background:  #f8f9ff;
   display: flex;
   align-items: center;
   justify-content: center;
