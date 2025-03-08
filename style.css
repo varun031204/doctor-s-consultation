@@ -344,7 +344,7 @@
       width: 90%;
   }
 }
-/* Section Styling */
+
 /* Section Styling */
 .ai-process {
   text-align: center;
@@ -388,29 +388,29 @@
   transform: translateY(-5px);
 }
 
-/* Special case for 4th card (center it below the first 3) */
-@media (min-width: 768px) { /* For tablets and larger screens */
+
+@media (min-width: 768px) {
   .process-card:nth-child(4) {
-      grid-column: span 3; /* Takes full width of 3 columns */
-      justify-self: center; /* Centers it */
-      width: 50%; /* Adjust width to look balanced */
+      grid-column: span 3; 
+      justify-self: center;
+      width: 50%; 
   }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 767px) { /* For mobile screens */
+
+@media (max-width: 767px) { 
   .process-container {
-      grid-template-columns: 1fr; /* Stack all cards in a single column */
+      grid-template-columns: 1fr; 
       gap: 20px;
   }
 
   .process-card:nth-child(4) {
-      grid-column: span 1; /* Takes full width */
-      width: 100%; /* Full width on mobile */
+      grid-column: span 1; 
+      width: 100%; 
   }
 }
 
-/* Number Box */
+
 .process-number {
   font-size: 1.5rem;
   font-weight: 700;
@@ -422,7 +422,7 @@
   margin-bottom: 15px;
 }
 
-/* Card Content */
+
 .process-card h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -434,7 +434,7 @@
   color: #666;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .process-container {
       grid-template-columns: 1fr;
