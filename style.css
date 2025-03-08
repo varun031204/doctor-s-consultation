@@ -521,6 +521,26 @@ join-doctor {
       padding: 10px 20px;
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+
+  .join-title {
+      font-size: 24px;
+  }
+
+  .join-description {
+      font-size: 14px;
+  }
+
+  .join-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
 .vector-1 {
   fill: #004080;
   animation: vectorMove 20s infinite linear;
