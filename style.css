@@ -346,7 +346,7 @@
 }
 /* Timeline Section */
 .timeline {
-  background: #f8f9ff;
+  background: white;
   width: 90%;
   margin: 100px auto;
   text-align: center;
@@ -464,7 +464,7 @@
 .join-doctor {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f8f9ff;
+  background-color: white;
 }
 
 .container {
