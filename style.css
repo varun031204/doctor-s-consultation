@@ -346,6 +346,7 @@
 }
 /* Timeline Section */
 .timeline {
+  background: #f8f9ff;
   width: 90%;
   margin: 100px auto;
   text-align: center;
