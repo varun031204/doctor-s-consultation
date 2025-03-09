@@ -1,28 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navbarNav = document.querySelector(".navbar-nav");
-  
-    document.querySelectorAll(".contact-card").forEach(card => {
-        card.style.opacity = "1";
-        card.style.transform = "translateY(0)";
-    });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents page reload
 
+    // Show success message
+    let successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block"; // Make it visible
 
+    // Optionally, clear the form
+    this.reset();
 
-  if (menuToggle && navbarNav) {
-      menuToggle.addEventListener("click", () => {
-          navbarNav.classList.toggle("active");
-          menuToggle.classList.toggle("active");
-      });
-
-      // Close menu when clicking a link (useful for mobile)
-      document.querySelectorAll(".navbar-nav a").forEach(link => {
-          link.addEventListener("click", () => {
-              navbarNav.classList.remove("active");
-              menuToggle.classList.remove("active");
-          });
-      });
-  } else {
-      console.error("Navbar elements not found. Check your HTML structure.");
-  }
+    // Hide message after 3 seconds
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 3000);
 });
