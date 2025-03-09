@@ -13,3 +13,4 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         successMessage.style.display = "none";
     }, 3000);
 });
+
