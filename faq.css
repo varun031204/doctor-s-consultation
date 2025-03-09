@@ -103,24 +103,39 @@ nav {
 
 .faq-section h2 {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .faq-item {
     margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .faq-question {
-    background-color: #f7f9fc;
+    background-color: #ffffff;
     border: none;
     width: 100%;
     text-align: left;
     padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-question.active {
+    background-color: #e0eafc; /* Highlight active question */
+    color: #007bff; /* Change text color for active state */
 }
 
 .faq-answer {
     display: none; /* Initially hidden */
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
 }
-
 /* Footer */
 .footer {
     background-color: #f7f9fc; /* Light gray background */
