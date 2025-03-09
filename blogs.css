@@ -54,11 +54,16 @@
     background-color: #b4b4b4;
   }
   
-  .menu-toggle {
+.menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-  }
+    position: absolute;
+    right: 20px; /* Adjusted to move it slightly left */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
   
   .menu-toggle div {
     width: 30px;
