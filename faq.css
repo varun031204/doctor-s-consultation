@@ -160,6 +160,44 @@
 }
 /* Footer */
  .footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    min-width: 150px;
+}
+
+.column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.column a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.column a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+ .footer {
     background-color: white;
     padding: 40px 10%;
     font-family: 'Roboto', sans-serif;
@@ -349,8 +387,7 @@
       text-align: center;
     }
     
-    /* Specialties Adjustments */
-  
+   
     
     /* Footer Adjustments */
     .footer-top {
@@ -392,4 +429,3 @@
     }
   }
   
-
