@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
           menuToggle.classList.toggle("active");
       });
 
-      // Close menu when clicking a link (useful for mobile)
+    
       document.querySelectorAll(".navbar-nav a").forEach(link => {
           link.addEventListener("click", () => {
               navbarNav.classList.remove("active");
