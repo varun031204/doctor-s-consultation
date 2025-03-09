@@ -340,5 +340,50 @@ hr {
 .footer-info {
     text-align: center;
     margin-top: 10px;
+}/* Responsive FAQ Section */
+.faq-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* FAQ Image */
+.faq-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.faq-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FAQ Content */
+.faq-items {
+    flex: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-image {
+        max-width: 100%;
+    }
+
+    .faq-items {
+        width: 100%;
+    }
+}
+
 }
