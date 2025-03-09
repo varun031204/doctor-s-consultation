@@ -82,6 +82,7 @@ nav {
 /* Hero Section */
 .hero {
     background-color: #f7f9fc;
+    margin-top: 50px;
     text-align: center;
     padding: 50px 0;
 }
